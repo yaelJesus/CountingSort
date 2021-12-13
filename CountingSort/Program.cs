@@ -36,13 +36,9 @@ namespace CountingSort
             for (int i = 0; i < data.Length; i++)
             {
                 if (data[i] < min)
-                {
                     min = data[i];
-                }
-                else if (data[i] > max)
-                {
+                if (data[i] > max)
                     max = data[i];
-                }
             }
 
             int[] count = new int[max - min + 1];
